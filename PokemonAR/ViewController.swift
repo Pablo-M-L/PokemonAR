@@ -9,6 +9,7 @@
 import UIKit
 import SpriteKit
 import ARKit
+import GameplayKit
 
 class ViewController: UIViewController, ARSKViewDelegate {
     
@@ -48,13 +49,14 @@ class ViewController: UIViewController, ARSKViewDelegate {
     }
     
     // MARK: - ARSKViewDelegate
-    
+    //es metodo se llama cada vez que la escena genera un ancla.
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
-        // Create and configure a node for the anchor added to the view's session.
-        let labelNode = SKLabelNode(text: "👾")
-        labelNode.horizontalAlignmentMode = .center
-        labelNode.verticalAlignmentMode = .center
-        return labelNode;
+        let random = GKRandomSource.sharedRandom()
+        let nextPokemon = random.nextInt(upperBound: 4) + 1
+        
+        let textura = SKTexture(imageNamed: "pokemon\(nextPokemon)")
+        let pokemon = SKSpriteNode(texture: textura)
+        return pokemon
     }
     
     func session(_ session: ARSession, didFailWithError error: Error) {

@@ -14,6 +14,7 @@
 		844522C622E6336B00567E3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844522C422E6336B00567E3C /* Main.storyboard */; };
 		844522C822E6336C00567E3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844522C722E6336C00567E3C /* Assets.xcassets */; };
 		844522CB22E6336C00567E3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844522C922E6336C00567E3C /* LaunchScreen.storyboard */; };
+		8472C74E22E8316A00C69118 /* QuickDeath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8472C74D22E8316A00C69118 /* QuickDeath.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		844522C722E6336C00567E3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844522CA22E6336C00567E3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		844522CC22E6336D00567E3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8472C74D22E8316A00C69118 /* QuickDeath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = QuickDeath.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				844522C022E6336B00567E3C /* Scene.swift */,
 				844522C222E6336B00567E3C /* ViewController.swift */,
 				844522C422E6336B00567E3C /* Main.storyboard */,
+				8472C74D22E8316A00C69118 /* QuickDeath.mp3 */,
 				844522C722E6336C00567E3C /* Assets.xcassets */,
 				844522C922E6336C00567E3C /* LaunchScreen.storyboard */,
 				844522CC22E6336D00567E3C /* Info.plist */,
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8472C74E22E8316A00C69118 /* QuickDeath.mp3 in Resources */,
 				844522BF22E6336B00567E3C /* Scene.sks in Resources */,
 				844522CB22E6336C00567E3C /* LaunchScreen.storyboard in Resources */,
 				844522C822E6336C00567E3C /* Assets.xcassets in Resources */,
@@ -297,6 +301,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pablo.PokemonAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -315,6 +320,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pablo.PokemonAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
